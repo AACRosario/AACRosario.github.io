@@ -1,0 +1,40 @@
+.Efectos{
+	width:1200px;
+	height:200px;
+	border:2px solid black;
+	margin:auto;
+	background-size:100% 100%;
+	/*animation-name: banneranimado;*/
+	/*abimation-duration:10s;*/
+	/*animation-iteration-count: infinite;*/
+	animation: efectos 10s infinite;
+	width:100%;
+	/*animation-direction: alternatte;
+	/*Para queno regrese a la primera animacion cuando termine sino que vuelva a la anterior y luego a la primera*/
+}
+
+/*Paradas que va a tener la animacion*/
+@keyframes Efectos {       /*@keyframes permite a los autores controlar*/
+	0%, 30%{
+
+background-image: url(../IMAGENES/imagen-3.jpg);
+  opacity:1;
+
+}
+
+31%, 34%{ 
+	opacity:0.1;
+}
+35%, 65%{
+	background-image:url(../IMAGENES/img2.jpg);  /*Descargar otra imagen*/
+	opacity:1;
+}
+
+66%,69%{
+	opacity:0.1;
+}
+70%,100%{
+	background-image: url(../IMAGENES/e4.jpg);
+	opacity:1;
+     }
+}

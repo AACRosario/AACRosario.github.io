@@ -1,0 +1,45 @@
+.banneranimado{
+	width:1200px;
+	height:200px;
+	border:2px solid black;
+	margin:auto;
+	background-size:100% 100%;
+	/*animation-name: banneranimado;*/
+	/*abimation-duration:10s;*/
+	/*animation-iteration-count: infinite;*/
+	animation: banneranimado 10s infinite;
+	width:100%;
+	/*animation-direction: alternatte;
+	/*Para queno regrese a la primera animacion cuando termine sino que vuelva a la anterior y luego a la primera*/
+}
+
+/*Paradas que va a tener la animacion*/
+@keyframes banneranimado {       /*@keyframes permite a los autores controlar*/
+	0%, 30%{
+
+background-image: url(../IMG/e4.jpg);
+  opacity:1;
+
+}
+
+31%, 34%{ 
+	opacity:0.1;
+}
+35%, 55%{
+	background-image:url(../IMG/img2.jpg);  /*Descargar otra imagen*/
+	opacity:1;
+}
+
+66%,65%{
+	opacity:0.1;
+}
+70%,90%{
+	background-image: url(../IMG/e2.jpg);
+	opacity:1;
+}
+
+95%,100%{
+background-image: url(../IMG/e6.jpg);
+	opacity:1;
+
+}
